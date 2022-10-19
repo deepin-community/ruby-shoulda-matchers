@@ -1,0 +1,74 @@
+ruby-shoulda-matchers (4.3.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Pirate Praveen ]
+  * Add Breaks: ruby-shoulda (<< 4.0~)
+  * Fix path for removing bin/setup
+  * Advertize repackaged source in version
+  * Reupload to unstable
+
+  [ Cédric Boutillier ]
+  * Update team name
+  * Add .gitattributes to keep unwanted files out of the source package
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 04 Sep 2020 14:45:32 +0530
+
+ruby-shoulda-matchers (4.3.0-1) experimental; urgency=medium
+
+  [ Andrew Lee (李健秋) ]
+  * Added debian/ruby-tests.rake.
+  * Apply drop-git-in-gemspec.patch.
+  * debian/watch: fetch tarball from upstream's github instead.
+  * New upstream version 3.1.2
+  * Refresh drop-git-in-gemspec.patch.
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Pirate Praveen ]
+  * New upstream version 4.3.0
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Refresh patches
+  * Disable tests (TODO: try fixing the tests)
+  * Add myself to uploaders
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 25 Feb 2020 14:57:45 +0530
+
+ruby-shoulda-matchers (2.8.0-1) unstable; urgency=low
+
+  [ Antonio Terceiro]
+  * New upstream release (Closes: #709431)
+    - cannot update to 3.x as ruby-shoulda needs a version strictly smaller
+      than 3.0
+  * Update package with a new `dh-make-ruby -w` run
+  * Rebuilding makes the binary package provide the needed Rubygems metadata
+    (Closes: #829691)
+
+  [ Cédric Boutillier ]
+  * copyright: change to a working url in Format: field
+  * debian/control: remove obsolete DM-Upload-Allowed flag
+  * use canonical URI in Vcs-* fields
+  * debian/copyright: use DEP5 copyright-format/1.0 official URL for Format
+    field
+
+  [ Praveen Arimbrathodiyil ]
+  * clean log directory too
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+
+ -- Antonio Terceiro <terceiro@debian.org>  Thu, 14 Jul 2016 21:44:25 -0300
+
+ruby-shoulda-matchers (1.0.0~beta2-1) unstable; urgency=low
+
+  * Initial release (Closes: #626016)
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Fri, 08 Apr 2011 01:38:22 -0700

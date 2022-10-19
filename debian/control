@@ -1,0 +1,29 @@
+Source: ruby-shoulda-matchers
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               rake,
+               ruby-activesupport (>= 2:3.0.0),
+               ruby-rspec
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-shoulda-matchers.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-shoulda-matchers
+Homepage: https://github.com/thoughtbot/shoulda-matchers
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-shoulda-matchers
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-activesupport (>= 2:3.0.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: ruby-shoulda (<< 4.0~)
+Description: Test helpers for Rails applications, compatible with Test::Unit and RSpec
+ Test::Unit- and RSpec-compatible one-liners that test common Rails
+ functionality. These tests would otherwise be much longer, more complex, and
+ error-prone.

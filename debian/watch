@@ -1,0 +1,7 @@
+version=3
+opts=\
+repacksuffix=+dfsg,\
+repack,compression=xz,\
+dversionmangle=s/[\~\+]?dfsg.*//,\
+filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/shoulda-matchers-$1\.tar\.gz/ \
+  https://github.com/thoughtbot/shoulda-matchers/tags .*/v?(\d\S*)\.tar\.gz
